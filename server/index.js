@@ -28,7 +28,7 @@ app.get("/todos", async(req, res) => {
 	} catch (err){
 		console.error(err.message);
 	}
-})
+});
 
 // getting a specific todo
 app.get("/todos/:id", async(req, res) => {
@@ -54,7 +54,7 @@ app.put("/todos/:id", async(req, res) => {
 	} catch (err) {
 		console.error(err.message);
 	}
-})
+});
 
 // delete a todo
 app.delete("/todos/:id", async(req, res) => {
@@ -66,11 +66,7 @@ app.delete("/todos/:id", async(req, res) => {
 	} catch (err) {
 		console.error(err.message);
 	}
-})
-
-
-
-
+}); 
 
 app.listen(5000, () =>{
 	console.log("server has started on port 5000");
